@@ -1,7 +1,5 @@
 FROM node:8-alpine
 
-ENV APP_ROOT /app/
-WORKDIR $APP_ROOT
 RUN apk add --update --no-cache python make gcc g++ libstdc++
 RUN yarn global add protagonist@1.6.8
 RUN yarn global add aglio@2.3.0
